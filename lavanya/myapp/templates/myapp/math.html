@@ -1,0 +1,72 @@
+ myapp.html
+
+<html> 
+<head> 
+<title>BMI</title> 
+<style>
+        body{
+          background-color: green;
+          border-top: 20;
+        }
+        .m{
+          background-color:greenyellow;
+          border-style: dotted;
+          margin-top: 150px;
+          margin-left: 500px;
+          margin-right: 500px;
+          
+        }
+            .main{
+                font-size: 250%;
+                text-align: center;
+                background-color: greenyellow;
+                 margin-left: 50px;
+                  margin-right: 50px;
+                  padding: 50px;
+                  
+                  
+            }
+            .a{
+                font-size: 150%;
+                text-align: center;
+                background-color: goldenrod;
+                 margin-left: 50px;
+                  margin-right: 50px;
+                
+                 
+            }
+            form{
+              text-align: center;
+              background-color: yellow;
+               margin-left: 50px;
+             margin-right: 50px;
+             padding: 50px;
+            }
+           
+        </style>
+</head> 
+
+    <center>
+    <h1>lavanya D(25016895)</h1>
+<div class="edge"> 
+<div class="box"> 
+<h1>BMI</h1> 
+<form method="POST">
+{%csrf_token %}
+<div class="formelt"> 
+height:<input type="text" name="height" value="{{h}}"></input>(in m)<br/> 
+</div> 
+<div class="formelt"> 
+weight:<input type="text" name="weight" value="{{w}}"></input>(in kg)<br/> 
+</div> 
+<div class="formelt"> 
+<input type="submit" value="Calculate"></input><br/> 
+</div> 
+<div class="formelt"> 
+BMI:<input type="text" name="BMI" value="{{BMI}}"></input>kg/m<sup>2</sup><br/> 
+</div>
+</form>
+</div>
+</div> 
+</body>
+
