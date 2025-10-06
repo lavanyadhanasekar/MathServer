@@ -31,6 +31,7 @@ Create a HTML file to implement form based input and output.
 Publish the website in the given URL.
 
 ## PROGRAM :
+```
 myapp.html
 
 <html> 
@@ -134,7 +135,7 @@ urlpatterns = [
     path('BMI/',views.BMI,name="BMI"),
     path('',views.BMI,name="BMI")
 ]
-
+```
 ## SERVER SIDE PROCESSING:
 ![alt text](<Screenshot (48).png>)
 
