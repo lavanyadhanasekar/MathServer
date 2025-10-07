@@ -13,7 +13,7 @@ def BMI(request):
         print('weight=',w) 
         BMI = int(w)/((int(h)/100)**2)
         context['BMI'] = BMI 
-        context['h'] = l
-        context['w'] = b 
+        context['h'] = h
+        context['w'] = w
         print('BMI=',BMI) 
     return render(request,'myapp/math.html',context)
